@@ -157,7 +157,7 @@ function showDetail(id, trigger = null) {
   document.getElementById('detail-country').textContent = d.country;
 
   const heroImg = document.getElementById('detail-hero-img');
-  heroImg.src = d.img;
+  heroImg.setAttribute('src', d.img);
   heroImg.alt = d.imgAlt;
 
   document.getElementById('detail-description').textContent = d.description;
@@ -166,7 +166,7 @@ function showDetail(id, trigger = null) {
   ul.innerHTML = d.highlights.map(h => `<li>${h}</li>`).join('');
 
   const gallImg = document.getElementById('detail-gallery-img');
-  gallImg.src = d.galleryImg;
+  gallImg.setAttribute('src', d.galleryImg);
   gallImg.alt = d.galleryAlt;
 
   const dl = document.getElementById('detail-info');
