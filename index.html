@@ -72,8 +72,7 @@
 
     <!-- Tarjeta 1: Machu Picchu -->
     <div role="listitem">
-        <article class="card"
-            role="link"
+        <button class="card"
             tabindex="0"
             data-id="machu-picchu"
             onclick="showDetail('machu-picchu', this)"
@@ -95,14 +94,12 @@
                 </div>
                 <span class="card-cta" aria-hidden="true">Ver más →</span>
             </div>
-        </article>
+        </button>
     </div>
 
     <!-- Tarjeta 2: Patagonia -->
     <div role="listitem">
-        <article class="card"
-            role="link"
-            tabindex="0"
+        <button class="card"
             data-id="patagonia"
             onclick="showDetail('patagonia', this)"
             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('patagonia', this)}"
@@ -123,14 +120,12 @@
                 </div>
                 <span class="card-cta" aria-hidden="true">Ver más →</span>
             </div>
-        </article>
+        </button>
     </div>
 
     <!-- Tarjeta 3: Cartagena -->
     <div role="listitem">
-        <article class="card"
-            role="link"
-            tabindex="0"
+        <button class="card"
             data-id="cartagena"
             onclick="showDetail('cartagena', this)"
             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('cartagena', this)}"
@@ -151,14 +146,12 @@
                 </div>
                 <span class="card-cta" aria-hidden="true">Ver más →</span>
             </div>
-        </article>
+        </button>
     </div>
 
     <!-- Tarjeta 4: Amazonas -->
     <div role="listitem">
-        <article class="card"
-            role="link"
-            tabindex="0"
+        <button class="card"
             data-id="amazonas"
             onclick="showDetail('amazonas', this)"
             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('amazonas', this)}"
@@ -179,14 +172,12 @@
                 </div>
                 <span class="card-cta" aria-hidden="true">Ver más →</span>
             </div>
-        </article>
+        </button>
     </div>
 
     <!-- Tarjeta 5: Salar de Uyuni -->
     <div role="listitem">
-        <article class="card"
-            role="link"
-            tabindex="0"
+        <button class="card"
             data-id="uyuni"
             onclick="showDetail('uyuni', this)"
             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('uyuni', this)}"
@@ -207,14 +198,12 @@
                 </div>
                 <span class="card-cta" aria-hidden="true">Ver más →</span>
             </div>
-        </article>
+        </button>
     </div>
 
     <!-- Tarjeta 6: Rio de Janeiro -->
     <div role="listitem">
-        <article class="card"
-            role="link"
-            tabindex="0"
+        <button class="card"
             data-id="rio"
             onclick="showDetail('rio', this)"
             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('rio', this)}"
@@ -235,7 +224,7 @@
                 </div>
                 <span class="card-cta" aria-hidden="true">Ver más →</span>
             </div>
-        </article>
+        </button>
     </div>
 
 </div>
@@ -379,7 +368,7 @@
     </nav>
 
     <div id="detail-hero" class="detail-hero" aria-hidden="false">
-        <img id="detail-hero-img" data-src="" alt="" width="1200" height="600">
+        <img id="detail-hero-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="1200" height="600" data-src="">
         <div class="detail-hero-title">
             <h1 id="detail-title" tabindex="-1">Destino</h1>
             <p id="detail-country"></p>
@@ -396,8 +385,8 @@
                 <video autoplay muted loop playsinline id="detail-video" aria-label="Imágenes del destino" style="display:none">
                     <source src="assets/video_menu.mp4" type="video/mp4">
                 </video>
-                <img id="detail-gallery-img" data-src="" alt="" width="800" height="450"
-                     style="width:100%; height:100%; object-fit:cover;" loading="lazy" decoding="async">
+                <img id="detail-gallery-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="800" height="450"
+                     style="width:100%; height:100%; object-fit:cover;" loading="lazy" decoding="async" data-src="">
             </div>
         </div>
 
