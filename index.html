@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&J - Agencia de Turismo por Latinoamérica</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+<!-- ===== MAIN PAGE ===== -->
+<div id="page-main">
+
+    <header>
+        <nav class="top_bar" aria-label="Navegación principal">
+            <div class="nav_items">
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#postal">Contacto</a>
+            </div>
+        </nav>
+        <div class="header" id="inicio">
+            <!-- CAMBIAR LA RUTA: Reemplaza "TU_IMAGEN_AQUI" con la ruta de tu imagen de fondo -->
+            <div class="video_container" style="background-image: url('assets/imagen_header.webp'); background-size: cover; background-position: center;">
+                <h1>A&J</h1>
+                <h2 class="hero-sub">Agencia de Turismo por Latinoamérica</h2>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Bienvenida -->
+        <section class="principal_content" aria-labelledby="bienvenida-titulo">
+            <div class="content1">
+                <h2 id="bienvenida-titulo">Bienvenido a Latino América</h2>
+                <p>La parte del planeta más increíble e impactante, donde descubrirás desde el fin del mundo hasta la jungla amazónica.</p>
+            </div>
+        </section>
+
+        <!-- Audio ambiental -->
+        <section class="multimedia-strip" aria-labelledby="audio-titulo">
+            <div class="inner">
+                <h2 id="audio-titulo">🎵 Sonidos de Latinoamérica</h2>
+                <div class="audio-player-wrap">
+                    <p>Sumérgete en la atmósfera musical de nuestros destinos:</p>
+                    <audio controls aria-label="Música ambiental latinoamericana">
+                        <source src="assets/jungle_sound.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinos -->
+        <section class="destinations-section" id="destinos" aria-labelledby="destinos-titulo">
+            <div class="section-header">
+                <h2 id="destinos-titulo">Nuestros Destinos</h2>
+                <p>Explora los lugares más fascinantes de Latinoamérica</p>
+                <div class="section-divider" aria-hidden="true"></div>
+            </div>
+
+            <div class="destinations-grid" role="list">
+
+    <!-- Tarjeta 1: Machu Picchu -->
+    <div role="listitem">
+        <article class="card"
+            role="button"
+            tabindex="0"
+            data-id="machu-picchu"
+            onclick="showDetail('machu-picchu', this)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('machu-picchu', this)}"
+            aria-label="Ver detalles de Machu Picchu, Perú">
+            <div class="card-img-wrap">
+                <img src="assets/Machu_Picchu,_Peru_(2018).jpg"
+                    alt="Vista panorámica de Machu Picchu, ciudadela inca en las montañas de los Andes peruanos"
+                    width="600" height="338" loading="lazy" decoding="async">
+                <span class="card-badge" aria-label="País: Perú">Perú</span>
+            </div>
+            <div class="card-body">
+                <h3>Machu Picchu</h3>
+                <p>La ciudadela inca perdida entre las nubes. Patrimonio de la Humanidad y una de las siete maravillas del mundo moderno.</p>
+                <div class="card-meta">
+                    <span aria-label="Altitud: 2430 metros">🏔 2430 m</span>
+                    <span aria-label="Mejor época: Abril a Octubre">📅 Abr–Oct</span>
+                    <span aria-label="Dificultad: Moderada">🥾 Moderado</span>
+                </div>
+                <span class="card-cta" aria-hidden="true">Ver más →</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Tarjeta 2: Patagonia -->
+    <div role="listitem">
+        <article class="card"
+            role="button"
+            tabindex="0"
+            data-id="patagonia"
+            onclick="showDetail('patagonia', this)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('patagonia', this)}"
+            aria-label="Ver detalles de Patagonia, Argentina">
+            <div class="card-img-wrap">
+                <img src="assets/Patagonia.jpg"
+                    alt="Torres del Paine en la Patagonia argentina, con glaciares y cielos dramáticos"
+                    width="600" height="338" loading="lazy" decoding="async">
+                <span class="card-badge" aria-label="País: Argentina">Argentina</span>
+            </div>
+            <div class="card-body">
+                <h3>Patagonia</h3>
+                <p>El fin del mundo en toda su magnitud. Glaciares imponentes, vientos eternos y paisajes que roban el aliento.</p>
+                <div class="card-meta">
+                    <span aria-label="Altitud: a nivel del mar">🌊 Nivel mar</span>
+                    <span aria-label="Mejor época: Noviembre a Marzo">📅 Nov–Mar</span>
+                    <span aria-label="Dificultad: Exigente">🥾 Exigente</span>
+                </div>
+                <span class="card-cta" aria-hidden="true">Ver más →</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Tarjeta 3: Cartagena -->
+    <div role="listitem">
+        <article class="card"
+            role="button"
+            tabindex="0"
+            data-id="cartagena"
+            onclick="showDetail('cartagena', this)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('cartagena', this)}"
+            aria-label="Ver detalles de Cartagena de Indias, Colombia">
+            <div class="card-img-wrap">
+                <img src="assets/cartagena.webp"
+                    alt="Ciudad amurallada de Cartagena de Indias con sus coloridas casas coloniales y el Caribe"
+                    width="600" height="338" loading="lazy" decoding="async">
+                <span class="card-badge" aria-label="País: Colombia">Colombia</span>
+            </div>
+            <div class="card-body">
+                <h3>Cartagena de Indias</h3>
+                <p>Ciudad de ensueño entre murallas coloniales y aguas turquesas. Historia, cultura y Caribe en su máxima expresión.</p>
+                <div class="card-meta">
+                    <span aria-label="Temperatura promedio: 30 grados">☀️ 30°C</span>
+                    <span aria-label="Mejor época: Todo el año">📅 Todo el año</span>
+                    <span aria-label="Dificultad: Fácil">🥾 Fácil</span>
+                </div>
+                <span class="card-cta" aria-hidden="true">Ver más →</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Tarjeta 4: Amazonas -->
+    <div role="listitem">
+        <article class="card"
+            role="button"
+            tabindex="0"
+            data-id="amazonas"
+            onclick="showDetail('amazonas', this)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('amazonas', this)}"
+            aria-label="Ver detalles del Amazonas, Brasil">
+            <div class="card-img-wrap">
+                <img src="assets/amazonas.jpg"
+                    alt="Selva amazónica desde el aire mostrando el río Amazonas y su biodiversidad"
+                    width="600" height="338" loading="lazy" decoding="async">
+                <span class="card-badge" aria-label="País: Brasil">Brasil</span>
+            </div>
+            <div class="card-body">
+                <h3>Amazonas</h3>
+                <p>El pulmón del planeta. Una expedición por la selva más grande del mundo llena de fauna exótica y aventura pura.</p>
+                <div class="card-meta">
+                    <span aria-label="Temperatura promedio: 28 grados">🌡 28°C</span>
+                    <span aria-label="Mejor época: Junio a Noviembre">📅 Jun–Nov</span>
+                    <span aria-label="Dificultad: Aventura">🥾 Aventura</span>
+                </div>
+                <span class="card-cta" aria-hidden="true">Ver más →</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Tarjeta 5: Salar de Uyuni -->
+    <div role="listitem">
+        <article class="card"
+            role="button"
+            tabindex="0"
+            data-id="uyuni"
+            onclick="showDetail('uyuni', this)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('uyuni', this)}"
+            aria-label="Ver detalles del Salar de Uyuni, Bolivia">
+            <div class="card-img-wrap">
+                <img src="assets/uyuni.avif"
+                    alt="Reflejo perfecto en el Salar de Uyuni, Bolivia, el mayor desierto de sal del mundo"
+                    width="600" height="338" loading="lazy" decoding="async">
+                <span class="card-badge" aria-label="País: Bolivia">Bolivia</span>
+            </div>
+            <div class="card-body">
+                <h3>Salar de Uyuni</h3>
+                <p>El espejo natural más grande del mundo. Durante la temporada de lluvias, cielo y tierra se fusionan en un paisaje sobrenatural.</p>
+                <div class="card-meta">
+                    <span aria-label="Altitud: 3656 metros sobre el nivel del mar">🏔 3656 msnm</span>
+                    <span aria-label="Mejor época: Enero a Marzo">📅 Ene–Mar</span>
+                    <span aria-label="Dificultad: Fácil">🥾 Fácil</span>
+                </div>
+                <span class="card-cta" aria-hidden="true">Ver más →</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Tarjeta 6: Rio de Janeiro -->
+    <div role="listitem">
+        <article class="card"
+            role="button"
+            tabindex="0"
+            data-id="rio"
+            onclick="showDetail('rio', this)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('rio', this)}"
+            aria-label="Ver detalles de Río de Janeiro, Brasil">
+            <div class="card-img-wrap">
+                <img src="assets/rio_janeiro.jpg"
+                    alt="Vista del Cristo Redentor y la bahía de Río de Janeiro al atardecer"
+                    width="600" height="338" loading="lazy" decoding="async">
+                <span class="card-badge" aria-label="País: Brasil">Brasil</span>
+            </div>
+            <div class="card-body">
+                <h3>Río de Janeiro</h3>
+                <p>La ciudad maravillosa. Samba, playas icónicas, el Cristo Redentor y una energía que no encontrarás en ningún otro lugar del mundo.</p>
+                <div class="card-meta">
+                    <span aria-label="Temperatura promedio: 25 grados">☀️ 25°C</span>
+                    <span aria-label="Mejor época: Mayo a Septiembre">📅 May–Sep</span>
+                    <span aria-label="Dificultad: Fácil">🥾 Fácil</span>
+                </div>
+                <span class="card-cta" aria-hidden="true">Ver más →</span>
+            </div>
+        </article>
+    </div>
+
+</div>
+        </section>
+
+        <!-- Paquetes / Video -->
+        <section id="paquetes" class="destinations-section" style="background: var(--color-surface);" aria-labelledby="paquetes-titulo">
+            <div class="section-header">
+                <h2 id="paquetes-titulo">Conoce Nuestros Paquetes</h2>
+                <p>Un vistazo a las experiencias que te esperan</p>
+                <div class="section-divider" aria-hidden="true"></div>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 16/9; background: var(--color-surface-offset, #21262d); position: relative;">
+                <iframe src="https://media.istockphoto.com/id/1351317940/video/beautiful-aerial-view-of-the-igua%C3%A7u-falls-one-of-the-seven-natural-wonders-of-the-world.mp4?s=mp4-640x640-is&k=20&c=8OWw9YV1DnyH-6Iaxj7fIKLTvtLt92ZVRtbvN10kAVg=" 
+                        title="Video promocional de los paquetes turísticos A&J por Latinoamérica" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen 
+                        style="width:100%; height:100%; position: absolute; top: 0; left: 0;">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Formulario postal -->
+        <section class="postal-section" id="postal" aria-labelledby="postal-titulo">
+            <div class="section-header">
+                <h2 id="postal-titulo">Envía una Postal</h2>
+                <p>Comparte la magia de Latinoamérica con quien quieras</p>
+                <div class="section-divider" aria-hidden="true"></div>
+            </div>
+
+            <div class="postal-form-wrap">
+                <form id="postal-form" novalidate aria-label="Formulario de envío de postal turística" onsubmit="submitPostal(event)">
+
+                    <div class="form-group">
+                        <label for="nombre-remitente">Tu nombre <span aria-hidden="true">*</span></label>
+                        <input type="text" id="nombre-remitente" name="nombre-remitente"
+                               placeholder="Ej: María García" required autocomplete="given-name"
+                               aria-required="true" aria-describedby="nombre-hint">
+                        <small id="nombre-hint" style="color:var(--color-text-faint);font-size:var(--text-xs);margin-top:var(--space-1);display:block;">
+                            Este nombre aparecerá como remitente de la postal.
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-destinatario">Email del destinatario <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email-destinatario" name="email-destinatario"
+                               placeholder="amigo@ejemplo.com" required autocomplete="email"
+                               aria-required="true" aria-describedby="email-hint">
+                        <small id="email-hint" style="color:var(--color-text-faint);font-size:var(--text-xs);margin-top:var(--space-1);display:block;">
+                            La postal se enviará a esta dirección.
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje-postal">Tu mensaje <span aria-hidden="true">*</span></label>
+                        <textarea id="mensaje-postal" name="mensaje-postal" rows="4"
+                                  placeholder="Escribe aquí tu mensaje..." required
+                                  aria-required="true" maxlength="300"
+                                  aria-describedby="mensaje-counter"></textarea>
+                        <small id="mensaje-counter" style="color:var(--color-text-faint);font-size:var(--text-xs);margin-top:var(--space-1);display:block;">
+                            Máximo 300 caracteres.
+                        </small>
+                    </div>
+
+                    <fieldset style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5); margin-bottom: var(--space-5);">
+                        <legend style="padding: 0 var(--space-2); font-size: var(--text-sm); font-weight: 600; color: var(--color-text);">
+                            Elige la imagen para tu postal <span aria-hidden="true">*</span>
+                        </legend>
+                        <div class="image-choices" role="radiogroup" aria-required="true">
+
+                            <div class="image-choice">
+                                <input type="radio" id="img-machu" name="imagen-postal" value="machu-picchu" required>
+                                <label for="img-machu">
+                                    <img src="https://picsum.photos/seed/machupicchu/280/210"
+                                         alt="Postal de Machu Picchu, Perú" width="280" height="210" loading="lazy" decoding="async">
+                                    <span>Machu Picchu</span>
+                                </label>
+                            </div>
+
+                            <div class="image-choice">
+                                <input type="radio" id="img-patagonia" name="imagen-postal" value="patagonia">
+                                <label for="img-patagonia">
+                                    <img src="https://picsum.photos/seed/patagonia456/280/210"
+                                         alt="Postal de la Patagonia argentina" width="280" height="210" loading="lazy" decoding="async">
+                                    <span>Patagonia</span>
+                                </label>
+                            </div>
+
+                            <div class="image-choice">
+                                <input type="radio" id="img-cartagena" name="imagen-postal" value="cartagena">
+                                <label for="img-cartagena">
+                                    <img src="https://picsum.photos/seed/cartagena789/280/210"
+                                         alt="Postal de Cartagena de Indias, Colombia" width="280" height="210" loading="lazy" decoding="async">
+                                    <span>Cartagena</span>
+                                </label>
+                            </div>
+
+                            <div class="image-choice">
+                                <input type="radio" id="img-uyuni" name="imagen-postal" value="uyuni">
+                                <label for="img-uyuni">
+                                    <img src="https://picsum.photos/seed/uyuni202/280/210"
+                                         alt="Postal del Salar de Uyuni, Bolivia" width="280" height="210" loading="lazy" decoding="async">
+                                    <span>Salar de Uyuni</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <div id="form-error" role="alert" aria-live="assertive"
+                         style="display:none; color: #f87171; font-size:var(--text-sm); margin-bottom:var(--space-4);"></div>
+
+                    <button type="submit" class="btn-primary">
+                        <span>✉</span> Enviar Postal
+                    </button>
+                </form>
+
+<div id="form-success" class="form-success" role="status" aria-live="polite" tabindex="-1">                    ✓ ¡Postal enviada con éxito! Tu destinatario recibirá un pedacito de Latinoamérica.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 A&J Turismo Latinoamérica · Diseñado con ❤️ para viajeros soñadores</p>
+        <p style="margin-top: var(--space-2);">
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener noreferrer"
+               aria-label="Información sobre accesibilidad web WCAG 2.2 (abre en nueva pestaña)">Accesibilidad WCAG 2.2</a>
+        </p>
+    </footer>
+
+</div><!-- /#page-main -->
+
+
+<!-- ===== DETAIL PAGE ===== -->
+<div id="page-detail" aria-live="polite" aria-hidden="true" style="display:none;">    <nav class="detail-nav" aria-label="Navegación de regreso">
+        <button class="back-btn" onclick="goBack()" aria-label="Volver a la lista de destinos">
+            ← Volver a destinos
+        </button>
+    </nav>
+
+    <div id="detail-hero" class="detail-hero" aria-hidden="false">
+        <img id="detail-hero-img" src="" alt="" width="1200" height="600">
+        <div class="detail-hero-title">
+            <h1 id="detail-title" tabindex="-1"></h1>
+            <p id="detail-country"></p>
+        </div>
+    </div>
+
+    <div class="detail-content">
+        <div class="detail-main">
+            <h2>Sobre el destino</h2>
+            <p id="detail-description"></p>
+            <h2>Qué hacer</h2>
+            <ul class="highlights-list" id="detail-highlights" aria-label="Actividades destacadas"></ul>
+            <div class="detail-video-wrap">
+                <video autoplay muted loop playsinline id="detail-video" aria-label="Imágenes del destino" style="display:none">
+                    <source src="assets/video_menu.mp4" type="video/mp4">
+                </video>
+                <img id="detail-gallery-img" src="" alt="" width="800" height="450"
+                     style="width:100%; height:100%; object-fit:cover;" loading="lazy" decoding="async">
+            </div>
+        </div>
+
+        <aside class="detail-sidebar" aria-label="Información práctica del destino">
+            <div class="info-card">
+                <h3>Información práctica</h3>
+                <dl id="detail-info">
+                    <!-- Filled by JS -->
+                </dl>
+            </div>
+        </aside>
+    </div>
+
+</div><!-- /#page-detail -->
+
+
+<script src="js/app.js" defer></script>
+
+</body>
+</html>
