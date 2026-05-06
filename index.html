@@ -72,58 +72,56 @@
 
     <!-- Tarjeta 1: Machu Picchu -->
     <div role="listitem">
-        <div class="card"
-            role="button"
-            tabindex="0"
-            data-id="machu-picchu"
-            onclick="showDetail('machu-picchu', this)"
-            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('machu-picchu', this)}"
-            aria-label="Ver detalles de Machu Picchu, Perú">
-            <div class="card-img-wrap">
-                <img src="assets/Machu_Picchu,_Peru_(2018).jpg"
-                    alt="Vista panorámica de Machu Picchu, ciudadela inca en las montañas de los Andes peruanos"
-                    width="600" height="338" loading="lazy" decoding="async">
-                <span class="card-badge" title="País: Perú">Perú</span>
-            </div>
-            <div class="card-body">
-                <h3>Machu Picchu</h3>
-                <p>La ciudadela inca perdida entre las nubes. Patrimonio de la Humanidad y una de las siete maravillas del mundo moderno.</p>
-                <div class="card-meta" role="list" aria-label="Características del destino">
-                    <span role="listitem" title="Altitud: 2430 metros">🏔 <span class="sr-only">Altitud:</span> 2430 m</span>
-                    <span role="listitem" title="Mejor época: Abril a Octubre">📅 <span class="sr-only">Mejor época:</span> Abr–Oct</span>
-                    <span role="listitem" title="Dificultad: Moderada">🥾 <span class="sr-only">Dificultad:</span> Moderado</span>
+        <article class="card">
+            <button type="button" class="card-button"
+                data-id="machu-picchu"
+                onclick="showDetail('machu-picchu', this)"
+                aria-label="Ver detalles de Machu Picchu, Perú">
+                <div class="card-img-wrap">
+                    <img src="assets/Machu_Picchu,_Peru_(2018).jpg"
+                        alt="Vista panorámica de Machu Picchu, ciudadela inca en las montañas de los Andes peruanos"
+                        width="600" height="338" loading="lazy" decoding="async">
+                    <span class="card-badge" title="País: Perú">Perú</span>
                 </div>
-                <span class="card-cta" aria-hidden="true">Ver más →</span>
-            </div>
-        </div>
+                <div class="card-body">
+                    <h3>Machu Picchu</h3>
+                    <p>La ciudadela inca perdida entre las nubes. Patrimonio de la Humanidad y una de las siete maravillas del mundo moderno.</p>
+                    <ul class="card-meta" aria-label="Características del destino">
+                        <li><span aria-hidden="true">🏔</span> Altitud: 2430 m</li>
+                        <li><span aria-hidden="true">📅</span> Mejor época: abril a octubre</li>
+                        <li><span aria-hidden="true">🥾</span> Dificultad: moderada</li>
+                    </ul>
+                    <span class="card-cta" aria-hidden="true">Ver más →</span>
+                </div>
+            </button>
+        </article>
     </div>
 
     <!-- Tarjeta 2: Patagonia -->
     <div role="listitem">
-        <div class="card"
-            role="button"
-            tabindex="0"
-            data-id="patagonia"
-            onclick="showDetail('patagonia', this)"
-            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('patagonia', this)}"
-            aria-label="Ver detalles de Patagonia, Argentina">
-            <div class="card-img-wrap">
-                <img src="assets/Patagonia.jpg"
-                    alt="Torres del Paine en la Patagonia argentina, con glaciares y cielos dramáticos"
-                    width="600" height="338" loading="lazy" decoding="async">
-                <span class="card-badge" title="País: Argentina">Argentina</span>
-            </div>
-            <div class="card-body">
-                <h3>Patagonia</h3>
-                <p>El fin del mundo en toda su magnitud. Glaciares imponentes, vientos eternos y paisajes que roban el aliento.</p>
-                <div class="card-meta" role="list" aria-label="Características del destino">
-                    <span role="listitem" title="Altitud: a nivel del mar">🌊 <span class="sr-only">Altitud:</span> Nivel mar</span>
-                    <span role="listitem" title="Mejor época: Noviembre a Marzo">📅 <span class="sr-only">Mejor época:</span> Nov–Mar</span>
-                    <span role="listitem" title="Dificultad: Exigente">🥾 <span class="sr-only">Dificultad:</span> Exigente</span>
+        <article class="card">
+            <button type="button" class="card-button"
+                data-id="patagonia"
+                onclick="showDetail('patagonia', this)"
+                aria-label="Ver detalles de Patagonia, Argentina">
+                <div class="card-img-wrap">
+                    <img src="assets/Patagonia.jpg"
+                        alt="Torres del Paine en la Patagonia argentina, con glaciares y cielos dramáticos"
+                        width="600" height="338" loading="lazy" decoding="async">
+                    <span class="card-badge" title="País: Argentina">Argentina</span>
                 </div>
-                <span class="card-cta" aria-hidden="true">Ver más →</span>
-            </div>
-        </div>
+                <div class="card-body">
+                    <h3>Patagonia</h3>
+                    <p>El fin del mundo en toda su magnitud. Glaciares imponentes, vientos eternos y paisajes que roban el aliento.</p>
+                    <ul class="card-meta" aria-label="Características del destino">
+                        <li><span aria-hidden="true">🌊</span> Altitud: a nivel del mar</li>
+                        <li><span aria-hidden="true">📅</span> Mejor época: noviembre a marzo</li>
+                        <li><span aria-hidden="true">🥾</span> Dificultad: exigente</li>
+                    </ul>
+                    <span class="card-cta" aria-hidden="true">Ver más →</span>
+                </div>
+            </button>
+        </article>
     </div>
 
     <!-- Tarjeta 3: Cartagena -->
@@ -156,86 +154,83 @@
 
     <!-- Tarjeta 4: Amazonas -->
     <div role="listitem">
-        <div class="card"
-            role="button"
-            tabindex="0"
-            data-id="amazonas"
-            onclick="showDetail('amazonas', this)"
-            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('amazonas', this)}"
-            aria-label="Ver detalles del Amazonas, Brasil">
-            <div class="card-img-wrap">
-                <img src="assets/amazonas.jpg"
-                    alt="Selva amazónica desde el aire mostrando el río Amazonas y su biodiversidad"
-                    width="600" height="338" loading="lazy" decoding="async">
-                <span class="card-badge" title="País: Brasil">Brasil</span>
-            </div>
-            <div class="card-body">
-                <h3>Amazonas</h3>
-                <p>El pulmón del planeta. Una expedición por la selva más grande del mundo llena de fauna exótica y aventura pura.</p>
-                <div class="card-meta" role="list" aria-label="Características del destino">
-                    <span role="listitem" title="Temperatura promedio: 28 grados">🌡 <span class="sr-only">Temperatura:</span> 28°C</span>
-                    <span role="listitem" title="Mejor época: Junio a Noviembre">📅 <span class="sr-only">Mejor época:</span> Jun–Nov</span>
-                    <span role="listitem" title="Dificultad: Aventura">🥾 <span class="sr-only">Dificultad:</span> Aventura</span>
+        <article class="card">
+            <button type="button" class="card-button"
+                data-id="amazonas"
+                onclick="showDetail('amazonas', this)"
+                aria-label="Ver detalles del Amazonas, Brasil">
+                <div class="card-img-wrap">
+                    <img src="assets/amazonas.jpg"
+                        alt="Selva amazónica desde el aire mostrando el río Amazonas y su biodiversidad"
+                        width="600" height="338" loading="lazy" decoding="async">
+                    <span class="card-badge" title="País: Brasil">Brasil</span>
                 </div>
-                <span class="card-cta" aria-hidden="true">Ver más →</span>
-            </div>
-        </div>
+                <div class="card-body">
+                    <h3>Amazonas</h3>
+                    <p>El pulmón del planeta. Una expedición por la selva más grande del mundo llena de fauna exótica y aventura pura.</p>
+                    <ul class="card-meta" aria-label="Características del destino">
+                        <li><span aria-hidden="true">🌡</span> Temperatura: 28°C</li>
+                        <li><span aria-hidden="true">📅</span> Mejor época: junio a noviembre</li>
+                        <li><span aria-hidden="true">🥾</span> Dificultad: aventura</li>
+                    </ul>
+                    <span class="card-cta" aria-hidden="true">Ver más →</span>
+                </div>
+            </button>
+        </article>
     </div>
 
     <!-- Tarjeta 5: Salar de Uyuni -->
     <div role="listitem">
-        <div class="card"
-            role="button"
-            tabindex="0"
-            data-id="uyuni"
-            onclick="showDetail('uyuni', this)"
-            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('uyuni', this)}"
-            aria-label="Ver detalles del Salar de Uyuni, Bolivia">
-            <div class="card-img-wrap">
-                <img src="assets/uyuni.avif"
-                    alt="Reflejo perfecto en el Salar de Uyuni, Bolivia, el mayor desierto de sal del mundo"
-                    width="600" height="338" loading="lazy" decoding="async">
-                <span class="card-badge" title="País: Bolivia">Bolivia</span>
-            </div>
-            <div class="card-body">
-                <h3>Salar de Uyuni</h3>
-                <p>El espejo natural más grande del mundo. Durante la temporada de lluvias, cielo y tierra se fusionan en un paisaje sobrenatural.</p>
-                <div class="card-meta" role="list" aria-label="Características del destino">
-                    <span role="listitem" title="Altitud: 3656 metros sobre el nivel del mar">🏔 <span class="sr-only">Altitud:</span> 3656 msnm</span>
-                    <span role="listitem" title="Mejor época: Enero a Marzo">📅 <span class="sr-only">Mejor época:</span> Ene–Mar</span>
-                    <span role="listitem" title="Dificultad: Fácil">🥾 <span class="sr-only">Dificultad:</span> Fácil</span>
+        <article class="card">
+            <button type="button" class="card-button"
+                data-id="uyuni"
+                onclick="showDetail('uyuni', this)"
+                aria-label="Ver detalles del Salar de Uyuni, Bolivia">
+                <div class="card-img-wrap">
+                    <img src="assets/uyuni.avif"
+                        alt="Reflejo perfecto en el Salar de Uyuni, Bolivia, el mayor desierto de sal del mundo"
+                        width="600" height="338" loading="lazy" decoding="async">
+                    <span class="card-badge" title="País: Bolivia">Bolivia</span>
                 </div>
-                <span class="card-cta" aria-hidden="true">Ver más →</span>
-            </div>
-        </div>
+                <div class="card-body">
+                    <h3>Salar de Uyuni</h3>
+                    <p>El espejo natural más grande del mundo. Durante la temporada de lluvias, cielo y tierra se fusionan en un paisaje sobrenatural.</p>
+                    <ul class="card-meta" aria-label="Características del destino">
+                        <li><span aria-hidden="true">🏔</span> Altitud: 3656 msnm</li>
+                        <li><span aria-hidden="true">📅</span> Mejor época: enero a marzo</li>
+                        <li><span aria-hidden="true">🥾</span> Dificultad: fácil</li>
+                    </ul>
+                    <span class="card-cta" aria-hidden="true">Ver más →</span>
+                </div>
+            </button>
+        </article>
     </div>
 
     <!-- Tarjeta 6: Rio de Janeiro -->
     <div role="listitem">
-        <div class="card"
-            role="button"
-            tabindex="0"
-            data-id="rio"
-            onclick="showDetail('rio', this)"
-            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('rio', this)}"
-            aria-label="Ver detalles de Río de Janeiro, Brasil">
-            <div class="card-img-wrap">
-                <img src="assets/rio_janeiro.jpg"
-                    alt="Vista del Cristo Redentor y la bahía de Río de Janeiro al atardecer"
-                    width="600" height="338" loading="lazy" decoding="async">
-                <span class="card-badge" title="País: Brasil">Brasil</span>
-            </div>
-            <div class="card-body">
-                <h3>Río de Janeiro</h3>
-                <p>La ciudad maravillosa. Samba, playas icónicas, el Cristo Redentor y una energía que no encontrarás en ningún otro lugar del mundo.</p>
-                <div class="card-meta" role="list" aria-label="Características del destino">
-                    <span role="listitem" title="Temperatura promedio: 25 grados">☀️ <span class="sr-only">Temperatura:</span> 25°C</span>
-                    <span role="listitem" title="Mejor época: Mayo a Septiembre">📅 <span class="sr-only">Mejor época:</span> May–Sep</span>
-                    <span role="listitem" title="Dificultad: Fácil">🥾 <span class="sr-only">Dificultad:</span> Fácil</span>
+        <article class="card">
+            <button type="button" class="card-button"
+                data-id="rio"
+                onclick="showDetail('rio', this)"
+                aria-label="Ver detalles de Río de Janeiro, Brasil">
+                <div class="card-img-wrap">
+                    <img src="assets/rio_janeiro.jpg"
+                        alt="Vista del Cristo Redentor y la bahía de Río de Janeiro al atardecer"
+                        width="600" height="338" loading="lazy" decoding="async">
+                    <span class="card-badge" title="País: Brasil">Brasil</span>
                 </div>
-                <span class="card-cta" aria-hidden="true">Ver más →</span>
-            </div>
-        </div>
+                <div class="card-body">
+                    <h3>Río de Janeiro</h3>
+                    <p>La ciudad maravillosa. Samba, playas icónicas, el Cristo Redentor y una energía que no encontrarás en ningún otro lugar del mundo.</p>
+                    <ul class="card-meta" aria-label="Características del destino">
+                        <li><span aria-hidden="true">☀️</span> Temperatura: 25°C</li>
+                        <li><span aria-hidden="true">📅</span> Mejor época: mayo a septiembre</li>
+                        <li><span aria-hidden="true">🥾</span> Dificultad: fácil</li>
+                    </ul>
+                    <span class="card-cta" aria-hidden="true">Ver más →</span>
+                </div>
+            </button>
+        </article>
     </div>
 
 </div>
@@ -248,13 +243,11 @@
                 <p>Un vistazo a las experiencias que te esperan</p>
                 <div class="section-divider" aria-hidden="true"></div>
             </div>
-            <div style="max-width: 800px; margin: 0 auto; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 16/9; background: var(--color-surface-offset, #21262d); position: relative;">
-                <iframe src="https://media.istockphoto.com/id/1351317940/video/beautiful-aerial-view-of-the-igua%C3%A7u-falls-one-of-the-seven-natural-wonders-of-the-world.mp4?s=mp4-640x640-is&k=20&c=8OWw9YV1DnyH-6Iaxj7fIKLTvtLt92ZVRtbvN10kAVg=" 
-                        title="Video promocional de los paquetes turísticos A&J por Latinoamérica" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen 
-                        style="width:100%; height:100%; position: absolute; top: 0; left: 0; border: none;">
-                </iframe>
+            <div style="max-width: 800px; margin: 0 auto; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 16/9; background: var(--color-surface-offset, #21262d);">
+                <video controls style="width: 100%; height: 100%; object-fit: cover;" aria-label="Video promocional de paquetes turísticos">
+                    <source src="https://media.istockphoto.com/id/1351317940/video/beautiful-aerial-view-of-the-igua%C3%A7u-falls-one-of-the-seven-natural-wonders-of-the-world.mp4?s=mp4-640x640-is&k=20&c=8OWw9YV1DnyH-6Iaxj7fIKLTvtLt92ZVRtbvN10kAVg=" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
             </div>
         </section>
 
@@ -307,7 +300,7 @@
                         <div class="image-choices" role="group">
 
                             <div class="image-choice">
-                                <input type="radio" id="img-machu" name="imagen-postal" value="machu-picchu" required aria-required="true">
+                                <input type="radio" id="img-machu" name="imagen-postal" value="machu-picchu" required>
                                 <label for="img-machu">
                                     <img src="https://picsum.photos/seed/machupicchu/280/210"
                                          alt="Postal de Machu Picchu, Perú" width="280" height="210" loading="lazy" decoding="async">
@@ -316,7 +309,7 @@
                             </div>
 
                             <div class="image-choice">
-                                <input type="radio" id="img-patagonia" name="imagen-postal" value="patagonia" aria-required="true">
+                                <input type="radio" id="img-patagonia" name="imagen-postal" value="patagonia">
                                 <label for="img-patagonia">
                                     <img src="https://picsum.photos/seed/patagonia456/280/210"
                                          alt="Postal de la Patagonia argentina" width="280" height="210" loading="lazy" decoding="async">
@@ -325,7 +318,7 @@
                             </div>
 
                             <div class="image-choice">
-                                <input type="radio" id="img-cartagena" name="imagen-postal" value="cartagena" aria-required="true">
+                                <input type="radio" id="img-cartagena" name="imagen-postal" value="cartagena">
                                 <label for="img-cartagena">
                                     <img src="https://picsum.photos/seed/cartagena789/280/210"
                                          alt="Postal de Cartagena de Indias, Colombia" width="280" height="210" loading="lazy" decoding="async">
@@ -334,7 +327,7 @@
                             </div>
 
                             <div class="image-choice">
-                                <input type="radio" id="img-uyuni" name="imagen-postal" value="uyuni" aria-required="true">
+                                <input type="radio" id="img-uyuni" name="imagen-postal" value="uyuni">
                                 <label for="img-uyuni">
                                     <img src="https://picsum.photos/seed/uyuni202/280/210"
                                          alt="Postal del Salar de Uyuni, Bolivia" width="280" height="210" loading="lazy" decoding="async">
