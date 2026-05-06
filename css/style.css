@@ -103,8 +103,10 @@ header { width: 100%; }
     position: relative; z-index: 10;
     font-size: var(--text-hero); font-weight: 700;
     color: #fff; margin: 0; text-align: center; letter-spacing: 2px;
+    display: flex; flex-direction: column; align-items: center;
 }
-.video_container h2.hero-sub {
+.video_container .hero-sub {
+    display: block;
     position: relative; z-index: 10;
     font-size: var(--text-lg); font-weight: 300; font-family: var(--font-body);
     color: rgba(255,255,255,0.9); margin: var(--space-3) 0 0 0;
@@ -134,8 +136,22 @@ header { width: 100%; }
 }
 .destinations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
-    gap: var(--space-6); max-width: 1200px; margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6); 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
 }
 .card {
     background: var(--color-surface);
