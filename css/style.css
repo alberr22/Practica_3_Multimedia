@@ -192,7 +192,7 @@ header { width: 100%; }
     text-transform: uppercase;
 }
 .card-body { padding: var(--space-5); }
-.card-body h3 { font-size: var(--text-lg); margin-bottom: var(--space-2); }
+.card-title { display: block; font-size: var(--text-lg); margin-bottom: var(--space-2); font-weight: 600; }
 .card-body p { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-4); }
 .card-meta {
     display: flex;
