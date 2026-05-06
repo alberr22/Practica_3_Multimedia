@@ -30,8 +30,7 @@
         <div class="header" id="inicio">
             <!-- CAMBIAR LA RUTA: Reemplaza "TU_IMAGEN_AQUI" con la ruta de tu imagen de fondo -->
             <div class="video_container" style="background-image: url('assets/imagen_header.webp'); background-size: cover; background-position: center;">
-                <h1>A&J</h1>
-                <h2 class="hero-sub">Agencia de Turismo por Latinoamérica</h2>
+                <h1>A&J - Agencia de Turismo por Latinoamérica</h1>
             </div>
         </div>
     </header>
@@ -122,11 +121,10 @@
                 </div>
             </button>
         </article>
-    </div>
+    </li>
 
     <!-- Tarjeta 3: Cartagena -->
-    <!-- Tarjeta 3: Cartagena -->
-    <div role="listitem">
+    <li class="destination-item">
         <article class="card">
             <button type="button" class="card-button"
                 data-id="cartagena"
@@ -353,7 +351,7 @@
     </main>
 
     <footer>
-        <p>© 2025 A&J Turismo Latinoamérica · Diseñado con ❤️ para viajeros soñadores</p>
+        <p>© 2025 A&J Turismo Latinoamérica · Diseñado con amor <span aria-label="corazón">❤️</span> para viajeros soñadores</p>
         <p style="margin-top: var(--space-2);">
             <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener noreferrer"
                aria-label="Información sobre accesibilidad web WCAG 2.2 (abre en nueva pestaña)">Accesibilidad WCAG 2.2</a>
@@ -371,14 +369,7 @@
     </nav>
 
     <div id="detail-hero" class="detail-hero" aria-hidden="false">
-        <img id="detail-hero-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="1200" height="600" data-src="">
-        <div class="detail-hero-title">
-            <h1 id="detail-title" tabindex="-1">Destino</h1>
-            <p id="detail-country"></p>
-        </div>
-    </div>
-
-    <div class="detail-content">
+        <img id="detail-hero-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Imagen principal del destino seleccionado" width="1200" height="600" data-src="">
         <div class="detail-main">
             <h2>Sobre el destino</h2>
             <p id="detail-description"></p>
@@ -388,7 +379,7 @@
                 <video autoplay muted loop playsinline id="detail-video" aria-label="Imágenes del destino" style="display:none">
                     <source src="assets/video_menu.mp4" type="video/mp4">
                 </video>
-                <img id="detail-gallery-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="800" height="450"
+                <img id="detail-gallery-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Galería de imágenes del destino" width="800" height="450"
                      style="width:100%; height:100%; object-fit:cover;" loading="lazy" decoding="async" data-src="">
             </div>
         </div>
