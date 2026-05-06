@@ -72,7 +72,7 @@
     <!-- Tarjeta 1: Machu Picchu -->
     <li class="destination-item">
         <article class="card">
-            <button type="button" class="card-button"
+            <div role="button" tabindex="0" class="card-button"
                 data-id="machu-picchu"
                 onclick="showDetail('machu-picchu', this)"
                 aria-label="Ver detalles de Machu Picchu, Perú">
@@ -92,14 +92,14 @@
                     </ul>
                     <span class="card-cta" aria-hidden="true">Ver más →</span>
                 </div>
-            </button>
+            </div>
         </article>
     </li>
 
     <!-- Tarjeta 2: Patagonia -->
     <li class="destination-item">
         <article class="card">
-            <button type="button" class="card-button"
+            <div role="button" tabindex="0" class="card-button"
                 data-id="patagonia"
                 onclick="showDetail('patagonia', this)"
                 aria-label="Ver detalles de Patagonia, Argentina">
@@ -119,14 +119,14 @@
                     </ul>
                     <span class="card-cta" aria-hidden="true">Ver más →</span>
                 </div>
-            </button>
+            </div>
         </article>
     </li>
 
     <!-- Tarjeta 3: Cartagena -->
     <li class="destination-item">
         <article class="card">
-            <button type="button" class="card-button"
+            <div role="button" tabindex="0" class="card-button"
                 data-id="cartagena"
                 onclick="showDetail('cartagena', this)"
                 aria-label="Ver detalles de Cartagena de Indias, Colombia">
@@ -146,13 +146,13 @@
                     </ul>
                     <span class="card-cta" aria-hidden="true">Ver más →</span>
                 </div>
-            </button>
+            </div>
         </article>
     </li>
     <!-- Tarjeta 4: Amazonas -->
     <li class="destination-item">
         <article class="card">
-            <button type="button" class="card-button"
+            <div role="button" tabindex="0" class="card-button"
                 data-id="amazonas"
                 onclick="showDetail('amazonas', this)"
                 aria-label="Ver detalles del Amazonas, Brasil">
@@ -172,14 +172,14 @@
                     </ul>
                     <span class="card-cta" aria-hidden="true">Ver más →</span>
                 </div>
-            </button>
+            </div>
         </article>
     </li>
 
     <!-- Tarjeta 5: Salar de Uyuni -->
     <li class="destination-item">
         <article class="card">
-            <button type="button" class="card-button"
+            <div role="button" tabindex="0" class="card-button"
                 data-id="uyuni"
                 onclick="showDetail('uyuni', this)"
                 aria-label="Ver detalles del Salar de Uyuni, Bolivia">
@@ -199,14 +199,14 @@
                     </ul>
                     <span class="card-cta" aria-hidden="true">Ver más →</span>
                 </div>
-            </button>
+            </div>
         </article>
     </li>
 
     <!-- Tarjeta 6: Río de Janeiro -->
     <li class="destination-item">
         <article class="card">
-            <button type="button" class="card-button"
+            <div role="button" tabindex="0" class="card-button"
                 data-id="rio"
                 onclick="showDetail('rio', this)"
                 aria-label="Ver detalles de Río de Janeiro, Brasil">
@@ -226,7 +226,7 @@
                     </ul>
                     <span class="card-cta" aria-hidden="true">Ver más →</span>
                 </div>
-            </button>
+            </div>
         </article>
     </li>
 
@@ -351,7 +351,7 @@
     </main>
 
     <footer>
-        <p>© 2025 A&J Turismo Latinoamérica · Diseñado con amor <span aria-label="corazón">❤️</span> para viajeros soñadores</p>
+        <p>© 2025 A&J Turismo Latinoamérica · Diseñado con amor <span role="img" aria-label="corazón">❤️</span> para viajeros soñadores</p>
         <p style="margin-top: var(--space-2);">
             <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener noreferrer"
                aria-label="Información sobre accesibilidad web WCAG 2.2 (abre en nueva pestaña)">Accesibilidad WCAG 2.2</a>
@@ -374,7 +374,7 @@
             <h2>Sobre el destino</h2>
             <p id="detail-description"><span class="sr-only">Descripción del destino</span></p>
             <h2>Qué hacer</h2>
-            <ul class="highlights-list" id="detail-highlights" aria-label="Actividades destacadas" aria-live="polite" role="list"></ul>
+            <ul class="highlights-list" id="detail-highlights" aria-label="Actividades destacadas" aria-live="polite"></ul>
             <div class="detail-video-wrap">
                 <video autoplay muted loop playsinline id="detail-video" aria-label="Imágenes del destino" style="display:none">
                     <source src="assets/video_menu.mp4" type="video/mp4">
