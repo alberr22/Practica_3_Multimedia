@@ -371,10 +371,16 @@
     <div id="detail-hero" class="detail-hero" aria-hidden="false">
         <img id="detail-hero-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Imagen principal del destino seleccionado" width="1200" height="600" data-src="">
         <div class="detail-main">
-            <h2>Sobre el destino</h2>
-            <p id="detail-description"><span class="sr-only">Descripción del destino</span></p>
-            <h2>Qué hacer</h2>
-            <ul class="highlights-list" id="detail-highlights" aria-label="Actividades destacadas" aria-live="polite"></ul>
+                <section aria-labelledby="detail-sobre-titulo">
+                    <h2 id="detail-sobre-titulo">Sobre el destino</h2>
+                    <p id="detail-description"><span class="sr-only">Cargando descripción del destino...</span></p>
+                </section>
+                <section aria-labelledby="detail-quehacer-titulo">
+                    <h2 id="detail-quehacer-titulo">Qué hacer</h2>
+                    <ul class="highlights-list" id="detail-highlights" aria-label="Actividades destacadas" aria-live="polite">
+                        <li class="sr-only">Cargando actividades...</li>
+                    </ul>
+                </section>
             <div class="detail-video-wrap">
                 <video autoplay muted loop playsinline id="detail-video" aria-label="Imágenes del destino" style="display:none">
                     <source src="assets/video_menu.mp4" type="video/mp4">
