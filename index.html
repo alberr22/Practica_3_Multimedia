@@ -68,10 +68,10 @@
                 <div class="section-divider" aria-hidden="true"></div>
             </div>
 
-            <div class="destinations-grid" role="list">
+            <ul class="destinations-grid">
 
     <!-- Tarjeta 1: Machu Picchu -->
-    <div role="listitem">
+    <li class="destination-item">
         <article class="card">
             <button type="button" class="card-button"
                 data-id="machu-picchu"
@@ -95,10 +95,10 @@
                 </div>
             </button>
         </article>
-    </div>
+    </li>
 
     <!-- Tarjeta 2: Patagonia -->
-    <div role="listitem">
+    <li class="destination-item">
         <article class="card">
             <button type="button" class="card-button"
                 data-id="patagonia"
@@ -125,35 +125,34 @@
     </div>
 
     <!-- Tarjeta 3: Cartagena -->
+    <!-- Tarjeta 3: Cartagena -->
     <div role="listitem">
-        <div class="card"
-            role="button"
-            tabindex="0"
-            data-id="cartagena"
-            onclick="showDetail('cartagena', this)"
-            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetail('cartagena', this)}"
-            aria-label="Ver detalles de Cartagena de Indias, Colombia">
-            <div class="card-img-wrap">
-                <img src="assets/cartagena.webp"
-                    alt="Ciudad amurallada de Cartagena de Indias con sus coloridas casas coloniales y el Caribe"
-                    width="600" height="338" loading="lazy" decoding="async">
-                <span class="card-badge" title="País: Colombia">Colombia</span>
-            </div>
-            <div class="card-body">
-                <h3>Cartagena de Indias</h3>
-                <p>Ciudad de ensueño entre murallas coloniales y aguas turquesas. Historia, cultura y Caribe en su máxima expresión.</p>
-                <div class="card-meta" role="list" aria-label="Características del destino">
-                    <span role="listitem" title="Temperatura promedio: 30 grados">☀️ <span class="sr-only">Temperatura:</span> 30°C</span>
-                    <span role="listitem" title="Mejor época: Todo el año">📅 <span class="sr-only">Mejor época:</span> Todo el año</span>
-                    <span role="listitem" title="Dificultad: Fácil">🥾 <span class="sr-only">Dificultad:</span> Fácil</span>
+        <article class="card">
+            <button type="button" class="card-button"
+                data-id="cartagena"
+                onclick="showDetail('cartagena', this)"
+                aria-label="Ver detalles de Cartagena de Indias, Colombia">
+                <div class="card-img-wrap">
+                    <img src="assets/cartagena.webp"
+                        alt="Ciudad amurallada de Cartagena de Indias con sus coloridas casas coloniales y el Caribe"
+                        width="600" height="338" loading="lazy" decoding="async">
+                    <span class="card-badge" title="País: Colombia">Colombia</span>
                 </div>
-                <span class="card-cta" aria-hidden="true">Ver más →</span>
-            </div>
-        </div>
-    </div>
-
+                <div class="card-body">
+                    <h3>Cartagena de Indias</h3>
+                    <p>Ciudad de ensueño entre murallas coloniales y aguas turquesas. Historia, cultura y Caribe en su máxima expresión.</p>
+                    <ul class="card-meta" aria-label="Características del destino">
+                        <li><span aria-hidden="true">☀️</span> Temperatura: 30°C</li>
+                        <li><span aria-hidden="true">📅</span> Mejor época: todo el año</li>
+                        <li><span aria-hidden="true">🥾</span> Dificultad: fácil</li>
+                    </ul>
+                    <span class="card-cta" aria-hidden="true">Ver más →</span>
+                </div>
+            </button>
+        </article>
+    </li>
     <!-- Tarjeta 4: Amazonas -->
-    <div role="listitem">
+    <li class="destination-item">
         <article class="card">
             <button type="button" class="card-button"
                 data-id="amazonas"
@@ -177,10 +176,10 @@
                 </div>
             </button>
         </article>
-    </div>
+    </li>
 
     <!-- Tarjeta 5: Salar de Uyuni -->
-    <div role="listitem">
+    <li class="destination-item">
         <article class="card">
             <button type="button" class="card-button"
                 data-id="uyuni"
@@ -204,10 +203,10 @@
                 </div>
             </button>
         </article>
-    </div>
+    </li>
 
-    <!-- Tarjeta 6: Rio de Janeiro -->
-    <div role="listitem">
+    <!-- Tarjeta 6: Río de Janeiro -->
+    <li class="destination-item">
         <article class="card">
             <button type="button" class="card-button"
                 data-id="rio"
@@ -231,9 +230,9 @@
                 </div>
             </button>
         </article>
-    </div>
+    </li>
 
-</div>
+</ul>
         </section>
 
         <!-- Paquetes / Video -->
